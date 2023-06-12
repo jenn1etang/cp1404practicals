@@ -23,3 +23,4 @@ number_of_stars = int(input("Number of stars: "))
 for count in range(1, number_of_stars + 1):
     print(count * "*", sep=' ')
 print()
+

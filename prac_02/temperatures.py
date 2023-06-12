@@ -2,6 +2,7 @@
 To converts Celsius to Fahrenheit and vice versa.
 """
 
+
 def main():
     option = '(C)elsius\n(F)ahrenheit\n(Q)uit'
     print(option)

@@ -3,6 +3,7 @@ CP1404/CP5632 - Practical
 Determines score status
 """
 
+
 from random import randint
 
 

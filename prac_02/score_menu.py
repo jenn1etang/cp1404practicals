@@ -1,5 +1,5 @@
 """
-
+Get a valid score and display the result and stars.
 """
 
 

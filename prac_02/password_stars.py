@@ -7,7 +7,8 @@ To enter appropriate password and display in stars.
 # CONSTANTS
 
 def main():
-    password = get_password()
+    password_minimum_character = 10
+    password = get_password(password_minimum_character)
     print("\nYou have create a password.", sep=' ')
     display_asterisks(password)
 
@@ -16,8 +17,8 @@ def display_asterisks(password):
     print(password * '*')
 
 
-def get_password():
-    password = password_length_check("Enter password: ", 10)
+def get_password(password_minimum_character):
+    password = password_length_check("Enter password: ", password_minimum_character)
     return password
 
 

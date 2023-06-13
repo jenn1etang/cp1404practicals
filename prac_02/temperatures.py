@@ -18,6 +18,7 @@ def main():
             print("Invalid option.")
         choice = str(input(">>> ")).lower()
 
+
 def fahrenheit_to_celsius(prompt):
     fahrenheit = float(input(prompt))
     celsius = (fahrenheit - 32) * 5 / 9

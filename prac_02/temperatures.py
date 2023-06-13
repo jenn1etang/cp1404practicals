@@ -4,14 +4,14 @@ To converts Celsius to Fahrenheit and vice versa.
 
 
 def main():
-    option = '(C)elsius\n(F)ahrenheit\n(Q)uit'
+    option = '(C)elsius to Fahrenheit\n(F)ahrenheit to Celsius\n(Q)uit'
     print(option)
     choice = str(input(">>> ")).lower()
     while choice != 'q':
-        if choice == 'c':
+        if choice == 'f':
             celsius = fahrenheit_to_celsius('Fahrenheit: ')
             print(f"{celsius:.2f}")
-        elif choice == 'f':
+        elif choice == 'c':
             fahrenheit = celsius_to_fahrenheit('Celsius: ')
             print(f"{fahrenheit:.2f}")
         else:

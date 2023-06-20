@@ -8,7 +8,6 @@ print(random.randrange(3, 10, 2))  # line 2
 print(random.uniform(2.5, 5.5))  # line 3
 """
 
-
 # line 1
 # for line 1, the largest number is 20 and the smallest is 5.
 

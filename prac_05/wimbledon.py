@@ -4,14 +4,14 @@ Estimate: 40 minutes
 Actual:   64 minutes
 """
 
-filename = 'wimbledon.csv'
+FILENAME = 'wimbledon.csv'
 
 
 def main():
     champion_won_count = {}
     won_countries = []
     print("Wimbledon Champions: ")
-    with open(filename, "r", encoding="utf-8-sig") as in_file:
+    with open(FILENAME, "r", encoding="utf-8-sig") as in_file:
         in_file.readline()
         for line in in_file:
             line = line.split(',')

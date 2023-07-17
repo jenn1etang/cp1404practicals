@@ -12,7 +12,7 @@ def main():
     while user_email != "":
         name = extract_name(user_email)
         is_name = str(input(f"Is your name {name}? (Y/n) ")).upper()
-        name = name_checker(is_name, name)
+        name = get_correct_name(is_name, name)
         user_data[name] = user_email
         user_email = str(input("Email: "))
 
@@ -21,16 +21,9 @@ def main():
         print(f"{name} ({user_email})")
 
 
-def name_checker(is_name, name):
+def get_correct_name(is_name, name):
     if is_name != 'Y' and is_name != "":
-        name = "".join(character for character in name if not character.isdigit())
-        name = list(name)
-        name[3] = name[3].upper()
-        part1 = ''.join(name[:3])
-        part2 = ''.join(name[3:])
-        name = [part1, part2]
-        name = " ".join(name)
-        print(f"Name: {name}")
+        name = str(input("Name: "))
     return name
 
 

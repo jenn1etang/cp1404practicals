@@ -19,3 +19,4 @@ class ProgrammingLanguage:
 
     def __str__(self):
         return f"{self.language}, {self.typing} Typing, Reflection={self.is_dynamic()}, First appeared in {self._year}"
+

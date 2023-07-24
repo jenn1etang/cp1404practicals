@@ -1,5 +1,5 @@
 """
-CP1404 -
+CP1404 - test Guitar class using programs
 Estimate time: 20mins
 Acutal time: 23mins
 """

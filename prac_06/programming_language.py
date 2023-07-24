@@ -12,7 +12,7 @@ class ProgrammingLanguage:
         self._year = _year
 
     def is_dynamic(self):
-        if self.typing == 'dynamic':
+        if self.typing == 'Dynamic':
             return True
         else:
             return False

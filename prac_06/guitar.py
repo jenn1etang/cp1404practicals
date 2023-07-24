@@ -1,7 +1,7 @@
 """
-CP1404 -
-Estimate time:
-Actual time:
+CP1404 - Guitar class
+Estimate time: 20mins
+Actual time:20mins
 """
 
 
@@ -14,7 +14,7 @@ class Guitar:
     def __str__(self):
         return f"{self.name} ({self.year}) : ${self.cost}"
 
-    def get_age(self, current_year=2023):
+    def get_age(self, current_year=2022):
         return current_year-self.year
 
     def is_vintage(self):

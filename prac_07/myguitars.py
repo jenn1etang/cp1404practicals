@@ -1,9 +1,8 @@
 """
 CP1404 - Guitar class
 Estimate time: 1hour
-Actual time: 36mins
+Actual time: 1:15mins
 """
-from operator import attrgetter
 
 
 class Guitar:
@@ -17,13 +16,13 @@ class Guitar:
 
     def __str__(self):
         """Return string presentation of a Guitar"""
-        return f"{self.name}, {self.year}, ${self.cost:.2f}"
+        return f"{self.name},{self.year},{self.cost}"
 
     def __lt__(self, other):
         return self.year < other.year
 
 
-def run_tests():
+def using_guitar_from_csv():
     guitars = []
     in_file = open('guitars.csv', 'r')
     in_file.readline()
@@ -38,5 +37,28 @@ def run_tests():
         print(guitar)
 
 
-if __name__ == "__main__":
-    run_tests()
+def using_guitar_from_user():
+    # store guitar information into a list
+    guitars = []
+    is_name_blank = False
+    name = str(input("Name: "))
+    year = int(input("Year: "))
+    cost = float(input("Cost: "))
+    while not is_name_blank:
+        guitar = Guitar(name, year, cost)
+        guitars.append(guitar)
+        name = str(input("Name: "))
+        if name == '' or ' ':
+            break
+        year = int(input("Year: "))
+        cost = float(input("Cost: "))
+    # write guitar information in guitars.csv
+    guitars.sort()
+    out_file = open('guitars.csv', 'w')
+    for guitar in guitars:
+        print(guitar, file = out_file)
+    # Close the file as soon as we've finished reading it
+    out_file.close()
+
+
+using_guitar_from_user()

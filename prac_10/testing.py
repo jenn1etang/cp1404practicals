@@ -33,10 +33,9 @@ def is_long_word(word, length=5):
 
 def form_sentence(phrase):
     phrase = list(phrase)
-    phrase[0] = phrase[0].title()
     if phrase[-1] != '.':
         phrase.append('.')
-    return ''.join(phrase)
+    return ''.join(phrase).capitalize()
 
 
 def run_tests():

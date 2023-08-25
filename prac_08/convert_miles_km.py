@@ -1,5 +1,5 @@
 """
-CP1404 - Covert Mile to KM using GUI and python
+CP1404 - Covnert Mile to KM using GUI and python
 
 Estimate time: 1hour
 Actual time: 2hours
@@ -24,7 +24,7 @@ class ConvertMilesKmApp(App):
 
     def handle_miles_to_km(self):
         """Convert miles to km and return in str as result."""
-        km = self.validate_miles() * 1.609344
+        km = self.validate_miles() * KILOMETER_TO_MILES
         self.result = str(km)
 
     def validate_miles(self):
